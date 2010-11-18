@@ -1,11 +1,11 @@
 {{#rows}}
-<div class='item clearfix'>
-    {{#.}}
+<div class='item {{type}} clearfix'>
+    {{#fields}}
     <div {{#class}}class='item-field {{.}}'{{/class}}>
         {{#label}}<label>{{.}}</label>{{/label}}
         {{{../../template .}}}
     </div>
-    {{/.}}
+    {{/fields}}
 </div>
 {{/rows}}
 
