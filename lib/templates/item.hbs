@@ -1,0 +1,11 @@
+{{#rows}}
+<div class='item clearfix'>
+    {{#.}}
+    <div {{#class}}class='item-field {{.}}'{{/class}}>
+        {{#label}}<label>{{.}}</label>{{/label}}
+        {{{../../template .}}}
+    </div>
+    {{/.}}
+</div>
+{{/rows}}
+

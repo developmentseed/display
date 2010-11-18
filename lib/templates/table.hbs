@@ -1,0 +1,18 @@
+<table class='tablesorter' cellspacing='0'>
+    <thead>
+        <tr>
+            {{#labels}}
+            <th {{#class}}class='{{.}}'{{/class}}>{{{../template .}}}</th>
+            {{/labels}}
+        </tr>
+    </thead>
+    <tbody>
+        {{#rows}}
+        <tr>
+            {{#.}}
+            <td {{#class}}class='{{.}}'{{/class}}>{{{../../template .}}}</td>
+            {{/.}}
+        </tr>
+        {{/rows}}
+    </tbody>
+</table>

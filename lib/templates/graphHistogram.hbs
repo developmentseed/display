@@ -1,0 +1,13 @@
+<span class='sort-value'>{{sort}}</span>
+<div class='histogram clearfix'>
+    {{#values}}
+    <span class='histogram-percent'>{{percent}}</span>% <br />
+    <small><span class='histogram-votes'>{{votes}}</span> votes</small>
+    {{/values}}
+    <div style='display:none;' class='raw-histogram'>{{histogram_raw}}</div>
+    <div class='flot-wax'>
+        <div style='display:none;' class='flot-wax-data'>{{histogram}}</div>
+        <div class='sparkline flot-wax-graph'></div>
+    </div>
+</div>
+

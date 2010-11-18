@@ -1,0 +1,16 @@
+<span class='sort-value'>{{sort}}</span>
+<div class='graph'>
+    <div class='graph-canvas' style='width:{{pct}}%'>
+        {{#values}}
+        <span class='segment' style='width:{{pct}}%; left:{{offset}}%; background-color:{{graph/color}};'><span class='label'>
+            <strong>{{graph/graph}}</strong>
+            <label>{{title}}</label>
+        </span></span>
+        <span class='separator'>/</span>
+        {{/values}}
+    </div>
+    {{#values}}
+        <span class='complement'>{{graph/display}}</span>
+        <span class='separator'>/</span>
+    {{/values}}
+</div>
