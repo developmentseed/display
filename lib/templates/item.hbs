@@ -2,7 +2,7 @@
 <div class='item {{type}} clearfix'>
     {{#fields}}
     <div {{#class}}class='item-field {{.}}'{{/class}}>
-        {{#label}}<label>{{.}}</label>{{/label}}
+        {{#label}}<label>{{{../../../template .}}}</label>{{/label}}
         {{{../../template .}}}
     </div>
     {{/fields}}

@@ -6,11 +6,9 @@
             <strong>{{graph/graph}}</strong>
             <label>{{title}}</label>
         </span></span>
-        <span class='separator'>/</span>
         {{/values}}
     </div>
-    {{#values}}
-        <span class='complement'>{{graph/display}}</span>
-        <span class='separator'>/</span>
-    {{/values}}
+    {{#caption}}
+        <div class='caption'>{{.}}</div>
+    {{/caption}}
 </div>

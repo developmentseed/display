@@ -1,15 +1,8 @@
-<div class='percent'>
 {{#values}}
-<span class='percent'>{{.}}%</span>
-<span class='separator'>/</span>
+{{.}}
 {{/values}}
-</div>
 
-{{#raw}}
-<div class='raw'>
-    <span class='complement'>{{numerator}}</span>
-    <span class='separator'>/</span>
-    <span class='complement'>{{denominator}}</span>
-</div>
-{{/raw}}
+{{#caption}}
+<div class='caption'>{{{caption}}}</div>
+{{/caption}}
 
