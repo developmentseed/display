@@ -6,11 +6,13 @@
             {{/labels}}
         </tr>
     </thead>
-    {{#rows}}
-    <tr class='{{type}}{{^type}}abstract{{/type}}'>
-        {{#fields}}
-        <td {{#class}}class='{{.}}'{{/class}}>{{{../../template .}}}</td>
-        {{/fields}}
-    </tr>
-    {{/rows}}
+    <tbody>
+        {{#rows}}
+        <tr class='{{type}}{{^type}}abstract{{/type}}'>
+            {{#fields}}
+            <td {{#class}}class='{{.}}'{{/class}}>{{{../../template .}}}</td>
+            {{/fields}}
+        </tr>
+        {{/rows}}
+    </tbody>
 </table>
