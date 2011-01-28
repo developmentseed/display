@@ -11,7 +11,20 @@ Display inherits some assumptions from its required environment expresslane.
 In particular:
 
 - View result sets are expected to be generated via CouchDB. The result set
-  should be an array of objects where each object has a `value` key.
+  should be an array of objects where each object has a `value` key.  For
+  example:
+       
+    array [
+        value: {
+            title: 'Foo',
+            description: 'This is some foo',
+        },
+        value: {
+            title: 'Bar',
+            description: 'This is some bar',
+        },
+    ]
+
 - The template engine used is [hbs](http://github.com/donpark/hbs) a light
   wrapper around [handlebars.js](http://github.com/wycats/handlebars.js).
 
