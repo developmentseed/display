@@ -13,7 +13,7 @@ In particular:
 - View result sets are expected to be generated via CouchDB. The result set
   should be an array of objects where each object has a `value` key.  For
   example:
-       
+
     array [
         value: {
             title: 'Foo',
